@@ -1,4 +1,5 @@
 import { ChangeEvent } from "react";
+import image from "../assets/image.svg";
 
 interface Props {
   state: boolean;
@@ -23,7 +24,7 @@ export default function UploaderCard(props: Props): JSX.Element {
           id="drop-zone"
           className="flex items-center justify-center flex-col w-[338px] h-[218px] rounded-[12px] border-[1px] border-dashed border-[#97BEF4]"
         >
-          <img src="../../public/image.svg" alt="" />
+          <img src={image} alt="" />
         </div>
         <p className="w-[14px] h-[18px] font-[Poppins] font-medium text-[10px] leading-[18px]  text-center trackng-[0.035em] text-[#BDBDBD] mb-[22px] mt-[19px]">
           Or

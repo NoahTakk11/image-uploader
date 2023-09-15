@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import check from "../assets/check.svg";
 
 interface Props {
   image: string;
@@ -22,7 +23,7 @@ export default function AfterLoader(props: Props): JSX.Element {
       }`}
     >
       <div className="flex items-center justify-center flex-col w-[340px] h-[400px]">
-        <img src="../../public/check.svg" alt="" />
+        <img src={check} alt="" />
         <h2 className="w-[198px] h-[27px] font-[Poppins] font-medium text-[18px] leading-[27px]  text-center trackng-[0.035em] text-[#828282] mb-[30px] mx-[110px]">
           Uploaded Successfully!
         </h2>
